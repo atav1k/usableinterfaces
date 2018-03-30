@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <nuxt-link to="/" class="text-bold pad-r-lg">Home</nuxt-link>
-    <nuxt-link to="/page" class="">Page</nuxt-link>
+    <nuxt-link to="/" class="pad-r-lg">Home</nuxt-link>
+    <nuxt-link to="/jakob-nielsen" class="">Nielsen</nuxt-link>
   </div>
 </template>

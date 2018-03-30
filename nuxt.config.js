@@ -3,13 +3,12 @@ module.exports = {
   ** Headers of the page
   */
   css: [
-    '~assets/shoelace/dist/shoelace.css'
+    '~/assets/shoelace.css'
   ],
 
-  // plugins: [
-  //   '~assets/shoelace/dist/shoelace.js',
-  //   '~assets/scrollactive/dist/vue-scrollactive.min.js',
-  // ],
+  plugins: [
+    { src: '~/plugins/vue-scrollactive'}
+  ],
 
   head: {
     title: 'usableinterface',
@@ -26,7 +25,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#ff5252' },
   /*
   ** Build configuration
   */
@@ -34,10 +33,6 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    vendor: [
-      'vue-scrollactive'
-    ],
-
     postcss: {
       plugins: {
       // Customize `postcss-cssnext` default options
