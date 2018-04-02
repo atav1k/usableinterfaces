@@ -1,7 +1,13 @@
 <template>
-  <div class="container">
-    <navbar class="mar-t-xs mar-b-xs"></navbar>
-    <nuxt/>
+  <div >
+    <navbar class="container mar-t-xs mar-b-xs"></navbar>
+    <nuxt class="container"/>
+    <!-- <footer class="mar-t-xl pad-t-xl pad-b-xl bg-dark">
+      <div class="container pad-t-xl text-light">
+        <h2>Usable Interfaces is a open source design resource maintained by Vikram.</h2>
+        <h3 class="pad-t-xl pad-b-xl">You can contribute your own usability heuristics here.</h3>
+      </div>
+    </footer> -->
   </div>
 </template>
 
@@ -10,7 +16,7 @@
     --headings-font-family: 'Libre Franklin';
     --font-system: 'Libre Franklin';
     --headings-line-height: 1.25;
-    --headings-font-size-h1: 4.5rem;
+    /* --headings-font-size-h1: 3rem; */
     --color-red: #ff5252;
     --color-swan: #f1f2f6;
     --body-bg-color: var(--color-swan);
@@ -25,7 +31,7 @@
   }
 
   *{
-    font-size: 24px;
+    font-size: 20px;
   }
 
   ol {
@@ -84,14 +90,24 @@
     }
   }
 
+  @media (max-width: 991px) {
+  /* md screens and below */
+    * {
+      font-size: 16px;
+    }
+  }
+
+
 </style>
 
 <script>
   import Navbar from '../components/Navbar'
+  import Footer from '../components/Footer'
 
   export default {
     components: {
-      Navbar
+      Navbar,
+      Footer
     }
   }
 </script>
